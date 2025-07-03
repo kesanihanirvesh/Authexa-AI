@@ -9,6 +9,11 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  preview: {
+    host: true,
+    port: 10000,
+    allowedHosts: ['authexa-ai.onrender.com'], // ✅ Add this line
+  },
   plugins: [
     react(),
     mode === 'development' &&
